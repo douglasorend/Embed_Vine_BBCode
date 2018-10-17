@@ -83,7 +83,7 @@ function BBCode_Vine_Validate(&$tag, &$data, &$disabled)
 	if (empty($height) && !empty($modSettings['Vine_default_height']))
 		$height = $modSettings['Vine_default_height'];
 	$tag['content'] = '<div style="' . (empty($width) ? '' : 'max-width: ' . $width . 'px;') . (empty($height) ? '' : 'max-height: ' . $height . 'px;') . '"><div class="vine-wrapper">' .
-		'<iframe src="https://vine.co/v/' . $data .'/card" scrolling="no" frameborder="' . $frameborder . '"></iframe></div></div>';
+		'<iframe src="https://vine.co/v/' . $data .'/card" scrolling="no" frameborder="' . $frameborder . '" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
 }
 
 function BBCode_Vine_LoadTheme()
