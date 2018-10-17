@@ -3,7 +3,7 @@
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
 <id>Dougiefresh:Vine</id>
 <name>Embed Vine Videos BBCode</name>
-<version>1.0</version>
+<version>1.1</version>
 
 <file name="$sourcedir/Post.php">
 	<operation>
@@ -19,7 +19,7 @@
 	<operation>
 		<search position="after"><![CDATA[// The non-breaking-space looks a bit different each time.]]></search>
 		<add><![CDATA[// Embed Vine URLs in the Vine bbcode tags:
-	BBCode_Vine_Embed($message);
+	BBCode_Vine_Embed($message, $smileys, $cache_id, $parse_tags)
 
 	]]></add>
 	</operation>

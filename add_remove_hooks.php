@@ -25,6 +25,8 @@ $hook_functions = array(
 	'integrate_bbc_codes' => 'BBCode_Vine',
 	'integrate_bbc_buttons' => 'BBCode_Vine_Button',
 	'integrate_general_mod_settings' => 'BBCode_Vine_Settings',
+// SMF 2.1+ Hooks below this line:
+	'integrate_pre_parsebbc' => 'BBCode_Vine_Embed',
 );
 
 // Adding or removing them?
