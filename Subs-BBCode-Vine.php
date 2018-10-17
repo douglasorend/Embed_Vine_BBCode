@@ -102,8 +102,11 @@ function BBCode_Vine_Settings(&$config_vars)
 
 function BBCode_Vine_Embed(&$message, &$smileys, &$cache_id, &$parse_tags)
 {
+	$replace = (strpos($cache_id, 'sig') !== false ? '[url]$0[/url]' : '[vine]$0[/vine]');
 	$pattern = '~(?<=[\s>\.(;\'"]|^)(?:https?\:\/\/)?(?:www\.)?vine.co\/v\/([\w\-_%]){11}+\??[/\w\-_\~%@\?;=#}\\\\]?~';
-	$message = preg_replace($pattern, '[vine]$0[/vine]', $message);
+	$message = preg_replace($pattern, $replace, $message);
+	if (strpos($cache_id, 'sig') !== false)
+		$message = preg_replace('#\[vine.*\](.*)\[\/vine\]#i', '[url]$1[/url]', $message);
 }
 
 ?>
