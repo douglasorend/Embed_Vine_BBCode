@@ -78,10 +78,10 @@ function BBCode_Vine_Validate(&$tag, &$data, &$disabled)
 		$data = $parts[4];
 	}
 	list($width, $height, $frameborder) = explode('|', $tag['content']);
-	if (empty($width) && !empty($modSettings['vine_default_width']))
-		$width = $modSettings['vine_default_width'];
-	if (empty($height) && !empty($modSettings['vine_default_height']))
-		$height = $modSettings['vine_default_height'];
+	if (empty($width) && !empty($modSettings['Vine_default_width']))
+		$width = $modSettings['Vine_default_width'];
+	if (empty($height) && !empty($modSettings['Vine_default_height']))
+		$height = $modSettings['Vine_default_height'];
 	$tag['content'] = '<div style="' . (empty($width) ? '' : 'max-width: ' . $width . 'px;') . (empty($height) ? '' : 'max-height: ' . $height . 'px;') . '"><div class="vine-wrapper">' .
 		'<iframe src="https://vine.co/v/' . $data .'/card" scrolling="no" frameborder="' . $frameborder . '"></iframe></div></div>';
 }
@@ -96,8 +96,8 @@ function BBCode_Vine_LoadTheme()
 
 function BBCode_Vine_Settings(&$config_vars)
 {
-	$config_vars[] = array('int', 'vine_default_width');
-	$config_vars[] = array('int', 'vine_default_height');
+	$config_vars[] = array('int', 'Vine_default_width');
+	$config_vars[] = array('int', 'Vine_default_height');
 }
 
 function BBCode_Vine_Embed(&$message, &$smileys, &$cache_id, &$parse_tags)
