@@ -1,37 +1,42 @@
-[hr]
-[center][color=red][size=16pt][b]EMBED VINE VIDEO BBCODE v1.8[/b][/size][/color]
-[url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=4071]Link to Mod[/url]
-[/center]
-[hr]
+---------
 
-[color=blue][b][size=12pt][u]Introduction[/u][/size][/b][/color]
+# EMBED VINE VIDEO BBCODE v1.8
+
+[**By Dougiefresh**](http://www.simplemachines.org/community/index.php?action=profile;u=253913) -> [Link to Mod](http://custom.simplemachines.org/mods/index.php?mod=4071)
+
+---------
+
+## Introduction
 This modification adds a BBCode to view Vine videos and pictures.
 
 The BBCode takes these forms:
-[code]
-[vine]{vine ID}[/vine]
-[vine width=x height=x]{vine ID}[/vine]
-[/code]
-where [b]{vine ID}[/b] is the [b]bnbO1QXLWhr[/b] part of the [b]http://vine.co/v/bnbO1QXLWhr[/b] URL.
+    
+    [vine]{vine ID}[/vine]
+    [vine width=x height=x]{vine ID}[/vine]
+    
+where **{vine ID}** is the **bnbO1QXLWhr** part of the **http://vine.co/v/bnbO1QXLWhr** URL.
 
-[color=blue][b][size=12pt][u]Admin Settings[/u][/size][/b][/color]
-There are two new settings on the [b]Modifications Settings[/b] page:
-o Vine default width
-o Vine default height
+## Admin Settings
+There are two new settings on the **Modifications Settings** page:
 
-[color=blue][b][size=12pt][u]Embed Information Source[/u][/size][/b][/color]
-o [url=https://stackoverflow.com/questions/24399692/dailymotion-iframe-api]Dailymotion iframe api[/url]
+- Vine default width
+- Vine default height
 
-[color=blue][b][size=12pt][u]Compatibility Notes[/u][/size][/b][/color]
+## Embed Information Source
+
+- [Dailymotion iframe api](https://stackoverflow.com/questions/24399692/dailymotion-iframe-api)
+
+## Compatibility Notes
 This mod was tested on SMF 2.0.10, but should work on SMF 2.1 Beta 2, as well as SMF 2.0 and up.  SMF 1.x is not and will not be supported.
 
-This mod should be installed after [url=https://www.tapatalk.com/download_SimpleMachines.php]Tapatalk mod[/url], if you want to use it with Tapatalk.
+This mod should be installed after [Tapatalk mod](https://www.tapatalk.com/download_SimpleMachines.php), if you want to use it with Tapatalk.
 
-[color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
-The changelog can be viewed at [url=http://www.xptsp.com/board/free-modifications/embed-vine-bbcode/?tab=1]XPtsp.com[/url].
+## Changelog
+The changelog can be viewed at [XPtsp.com](http://www.xptsp.com/board/free-modifications/embed-vine-bbcode/?tab=1).
 
-[color=blue][b][size=12pt][u]License[/u][/size][/b][/color]
+## License
 Copyright (c) 2015 - 2018, Douglas Orend
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
