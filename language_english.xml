@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+<id>Dougiefresh:Vine</id>
+<name>Embed Vine Videos BBCode</name>
+<version>1.0</version>
+	
+<file name="$languagedir/index.english.php">
+	<operation>
+		<search position="end" />
+		<add><![CDATA[
+$txt['Vine_no_post_id'] = 'No Vine post ID supplied.';]]></add>
+	</operation>
+</file>
+<file name="$languagedir/ManageSettings.english.php">
+	<operation>
+		<search position="end" />
+		<add><![CDATA[
+$txt['Vine_default_width'] = 'Default width used for Vine bbcode when not specified<div class="smalltext">Use <strong>0</strong> to use responsive video display</div>';
+$txt['Vine_default_height'] = 'Default height used for Vine bbcode when not specified<div class="smalltext">Use <strong>0</strong> to use responsive video display</div>';
+]]></add>
+	</operation>
+</file>
+</modification>
